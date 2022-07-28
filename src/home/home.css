@@ -1,0 +1,87 @@
+
+.home{
+
+    flex: 1 1 ;
+    display: flex;
+    position: relative;
+    background-size: cover;
+
+}
+.anime{
+    width: 100%;
+    flex: 0 0 75%
+}
+.anime__items{
+    padding: 1rem;
+    margin: 3rem 0 0 0;
+    gap: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,300px);
+}
+.find-inp{
+    color: rgb(255, 209, 188);
+    padding: 1rem;
+    flex: 0 0 25%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(79, 79, 79);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h2{
+    color: rgb(255, 166, 94);
+}
+.find{
+    color: rgb(255, 166, 94);
+    margin: 1rem 0 0 0 ;
+}
+.find-inp h1{
+    font-size: 3rem;
+    align-items: center;
+
+}
+.find-inp input{
+    color: rgb(116, 116, 116);
+    padding: 0.5rem 1rem ;
+    border: 0;
+    border-radius: 10px;
+
+    
+}
+.ganres__wrapper{
+    position: relative;
+}
+.inputs{
+    margin: 1rem 0 0 0 ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.genres{
+    padding: 0;
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genres li{
+    cursor: pointer;
+    padding: .2rem .5rem;
+    transition: 0.2s ease;
+    list-style-type: none;
+}
+.genres li.active{
+    color: rgb(254, 107, 66);
+}
+.genres li:hover{
+    background-color: rgb(117, 117, 117);
+}
+.wrap{
+    width: 100%;
+display: flex;
+justify-content: space-between;}

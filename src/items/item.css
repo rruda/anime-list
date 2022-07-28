@@ -1,0 +1,56 @@
+.item{
+    z-index: 0;
+    overflow:  hidden;
+    border-radius: 15px;
+    height: 25rem;
+    width: 100%;
+    position: relative;
+}
+.item img{
+    z-index: 0 ;
+    top: 0 ;
+    left: 0 ;
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.blur {
+    top: 0;
+
+    display: fixed;
+    z-index: 0;
+    position: absolute;
+    background: rgba(212, 212, 212, 0.234); 
+    backdrop-filter: blur(8px); 
+    height: 100%;
+    width: 100%;
+  }
+.item__description{
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+    transition: 0.2s ease;
+    color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+
+
+}
+.body__desc{
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item__description.active {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px); 
+    background-color: rgba(0, 0, 0, 0.571);
+    z-index: 2;
+}
+
+
